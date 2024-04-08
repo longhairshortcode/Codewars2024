@@ -63,3 +63,10 @@ function digitize(n) {
 
   return myArr;
 }
+
+//OTHER ANSWERS FOR THIS:
+function digitize(n) {
+  let nArr = Array.from(String(n), Number);
+  let revArr = nArr.reverse();
+  return revArr;
+}
