@@ -1,6 +1,7 @@
 //Tuesday March 26, 2024
 
 //TASK*******
+
 //Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
 //Examples: Input: [1, 5.2, 4, 0, -1], Output: 9.2
 //Input: [], Output: 0
@@ -20,9 +21,9 @@ function sum (numbers) {
 };
 
 
-//Monday April 8, 2024
+//(1st)Monday April 8, 2024
 
-//TASK*********************
+//TASK*********************Level 8 - Get the mean of an array
 // It's the academic year's end, fateful moment of your school report. The averages must be calculated. 
 // All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
 // Return the average of the given array rounded down to its nearest integer.
@@ -44,3 +45,21 @@ function getAverage(marks){
 
 
 //[10, 10 , 10, 9] = 9.75 => 9 final
+
+
+//(2nd)Monday April 8, 2024
+//TASK*********************Level 8 - Convert number to reversed array of digits
+//Given a random non-negative number, you have to return 
+//the digits of this number within an array in reverse order.
+//ANSWER******************
+function digitize(n) {
+  let nStr = n.toString();
+  let myArr = [];
+  let reverseArr = nStr.split('').reverse();
+
+  for (let i = 0; i < reverseArr.length; i++) {
+    myArr.push(Number(reverseArr[i]));
+  }
+
+  return myArr;
+}
