@@ -92,4 +92,7 @@ function digitize(n) {
 function digitize(n) {
   //make n to a string, then to an array, then back to numbers, then reverse the array
   return String(n).split('').map(Number).reverse()
+}function digitize(n) {
+  //make n to a string, then to an array, then back to numbers, then reverse the array
+  return String(n).split('').map(Number).reverse()
 }
