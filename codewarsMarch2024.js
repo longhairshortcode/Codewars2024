@@ -77,4 +77,16 @@ function digitize(n) {
 }
 
 
+//April 14, 24
+// Is every value in the array an array?
+// This should only test the second array dimension of the array. 
+// The values of the nested arrays don't have to be arrays.
 
+const arrCheck = value => {
+  for (let i=0; i<= value.length-1; i++){
+    if (!Array.isArray(value[i])){
+      return false;
+     }
+    }
+  return true;
+  }
