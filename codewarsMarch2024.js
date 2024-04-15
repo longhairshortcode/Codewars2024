@@ -115,3 +115,13 @@ function isAllPossibilities(x){
   }
   return true;
 }
+
+function isAllPossibilities(x){
+  let length = x.length - 1; // Define length inside the function
+  for (let i = 0; i <= length; i++){
+      if (!x.includes(i)) {
+          return false;
+      }
+  }
+  return true;
+}
