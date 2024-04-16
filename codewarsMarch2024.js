@@ -133,7 +133,7 @@ function checkPaladrone(myString) {
 
 checkPaladrone(myString);
 
-//TASK given a number, "n", find the first "n" elements of the Fibonacci sequence
+//TASK(Codevolution JS Algo 7 Youtube) given a number, "n", find the first "n" elements of the Fibonacci sequence
 //ANSWER
 function fibo(n) {
 let myArr = [0, 1];
@@ -141,4 +141,13 @@ for (let i = 2; i < n; i++){
   myArr.push((myArr[i - 2] + myArr[i - 1]))
 }
   return myArr;
+}
+
+//His Answer:
+function fibo(n) {
+  const fib = [0, 1]
+  for (let i = 2; i < n; i++){
+    fib[i] = fib[i-1] + fib[i-2]
+  }
+  return fib
 }
