@@ -142,5 +142,3 @@ for (let i = 2; i < n; i++){
 }
   return myArr;
 }
-
--take in a number, n, and have that many itesm in the Array, where each item is the sum of the last two
