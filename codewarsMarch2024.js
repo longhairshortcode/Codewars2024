@@ -126,3 +126,39 @@ function isAllPossibilities(x){
   return true;
 }
 
+
+
+const letters = []
+const word = "lunch"
+for (let i = 0; i < word.length; i++) {
+  letters.push(word[i])
+}
+
+
+// TASK is a word a paladrone?
+//Answer
+myString = "Leon"
+
+function checkPaladrone(myString) {
+  const strToArr = myString.split("")
+  let revStrToArr = strToArr.reverse()
+  if (strToArr === revStrToArr){
+    return "YES A PALIDRONE!"
+  }else{
+    return "NOPE"
+  }
+}
+
+checkPaladrone(myString);
+
+//TASK given a number, "n", find the first "n" elements of the Fibonacci sequence
+//ANSWER
+function fibo(n) {
+let myArr = [0, 1];
+for (let i = 2; i < n; i++){
+  myArr.push((myArr[i - 2] + myArr[i - 1]))
+}
+  return myArr;
+}
+
+-take in a number, n, and have that many itesm in the Array, where each item is the sum of the last two
