@@ -118,7 +118,7 @@ for (let i = 0; i < word.length; i++) {
 
 
 // TASK is a word a paladrone?
-//Answer
+//My Wrong Answer
 myString = "Leon"
 
 function checkPaladrone(myString) {
@@ -133,6 +133,19 @@ function checkPaladrone(myString) {
 
 checkPaladrone(myString);
 
+
+//My correct answer
+myStr = "Leon"
+
+function isPal(myStr){
+  let revStr = myStr.split("").reverse().join("")
+  if (myStr === revStr){
+    return true
+  }else{
+    return false
+  }
+}
+
 //TASK(Codevolution JS Algo 7 Youtube) given a number, "n", find the first "n" elements of the Fibonacci sequence
 //ANSWER
 function fibo(n) {
@@ -144,6 +157,14 @@ for (let i = 2; i < n; i++){
 }
 
 //His Answer:
+function fibo(n) {
+  const fib = [0, 1]
+  for (let i = 2; i < n; i++){
+    fib[i] = fib[i-1] + fib[i-2]
+  }
+  return fib
+}
+
 function fibo(n) {
   const fib = [0, 1]
   for (let i = 2; i < n; i++){
