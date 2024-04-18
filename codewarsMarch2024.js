@@ -235,3 +235,26 @@ function largestPairSum (numbers) {
 // - parameter is array of numbers
 // -returnn a number that is the two largert sume
 // ex: [1, 2, 3] = 5
+
+
+
+
+
+
+
+
+
+
+
+
+function largestPairSum (numbers) {
+ //sort the array smallest to largest
+  let largestTwo = numbers.sort((a, b) => a - b).splice(-2)
+  result = largestTwo.reduce((a, b) => a + b, 0 )
+  //cut off the last two and add them
+  return result 
+}
+
+// - parameter is array of numbers
+// -returnn a number that is the two largert sume
+// ex: [1, 2, 3] = 5
