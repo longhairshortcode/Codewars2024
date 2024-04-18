@@ -216,3 +216,22 @@ function factorial(n){
 // -factorial is the product of all its positive integers smaller than it to 0
 // -return one number that is the product of all the ones Before
 // -ex: factorial(4) = 4*3*2*1 = 24
+
+
+//CODEWARS 4/17/23 LEVEL 7 GOT IT~
+//Task
+//Given a sequence of numbers, find the largest pair sum in the sequence.
+
+//Answer
+
+function largestPairSum (numbers) {
+ //sort the array smallest to largest
+  let largestTwo = numbers.sort((a, b) => a - b).splice(-2)
+  result = largestTwo.reduce((a, b) => a + b, 0 )
+  //cut off the last two and add them
+  return result 
+}
+
+// - parameter is array of numbers
+// -returnn a number that is the two largert sume
+// ex: [1, 2, 3] = 5
