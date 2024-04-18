@@ -181,9 +181,10 @@ function fibo(n) {
   return fib
 }
 
-//4/17/24
+//4/17/24 -- from same youtube above
 //Task -- given n, find the factorial of it
 
+//My ANSWER correct
 function factorial(n){
 //check if n is greater than 0  if not, return not a factorial
 if (n < 0){
@@ -202,6 +203,14 @@ if (n < 0){
 //do a loop from 0, and then each loop, multiplt the product by n-1 
 }
 
+//His Answer / diffferent Way
+
+function factorial(n){
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result = result + 1
+    } return result
+}
 
 // -parameter is an integer greater than 0
 // -factorial is the product of all its positive integers smaller than it to 0
