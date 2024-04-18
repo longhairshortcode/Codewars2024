@@ -186,8 +186,10 @@ function fibo(n) {
 
 function factorial(n){
 //check if n is greater than 0  if not, return not a factorial
-if (n <= 0){
+if (n < 0){
   return "not a factorial"
+}else if (n === 0){
+  return 1
 }else{
   let product = 1
   for (let i = n-1; i > 0; i--){
@@ -195,8 +197,7 @@ if (n <= 0){
   } return product;
 }
 
-4
-4
+
 //have product = n to start
 //do a loop from 0, and then each loop, multiplt the product by n-1 
 }
